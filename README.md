@@ -6,6 +6,14 @@ LG U+ Why Not SW CAMP 7기에 참여하며 학습한 실습 코드와 프로젝�
 
 ---
 
+## 🛠 사용 기술
+
+- Python 3.x
+- Jupyter Notebook / Google Colab
+- Git / GitHub
+- Visual Studio Code
+
+---
 
 ## 🌟 미니 팀 프로젝트: 키오스크 프로그램
 
