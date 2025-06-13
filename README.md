@@ -8,7 +8,7 @@ LG U+ Why Not SW CAMP 7기에 참여하며 학습한 실습 코드와 프로젝�
 
 ## 🛠 사용 기술
 
-- Python 3.x
+- Python 
 - Jupyter Notebook / Google Colab
 - Git / GitHub
 - Visual Studio Code
