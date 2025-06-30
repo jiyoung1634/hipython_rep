@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>카카오 지도 예제</title>
+  <style>
+    #map {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+
+  <!-- ✅ JavaScript 키 삽입 + autoload=true (기본값) -->
+  <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=67ba4c3fec76e9ef6f18698084b089e3"></script>
+</head>
+<body>
+  <h2>🦌 고라니 출몰 지역 표시</h2>
+  <div id="map"></div>
+
+  <script>
+    window.onload = function () {
+      if (typeof kakao !== "undefined") {
+        var mapContainer = document.getElementById("map");
+        var mapOption = {
+          center: new kakao.maps.LatLng(37.5665, 126.9780),
+          level: 3,
+        };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition = new kakao.maps.LatLng(37.5665, 126.9780);
+        var marker = new kakao.maps.Marker({
+          position: markerPosition,
+        });
+
+        marker.setMap(map);
+      } else {
+        alert("❌ 카카오 API 로드 실패! 인터넷 연결 상태를 확인해주세요.");
+      }
+    };
+  </script>
+</body>
+</html>

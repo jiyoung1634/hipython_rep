@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tmap 예제</title>
+  <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=XXK2y1v4Ph6Ovhc2S2tpK4LmXwM1Gna39JehUB9E"></script>
+  <style>
+    #map_div {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🗺️ Tmap 지도에 점 찍기</h2>
+  <div id="map_div"></div>
+
+  <script>
+    // 지도 객체 생성
+    var map = new Tmapv2.Map("map_div", {
+      center: new Tmapv2.LatLng(37.5665, 126.9780), // 서울시청 중심
+      width: "100%",
+      height: "500px",
+      zoom: 15
+    });
+
+    // 점(마커) 찍기
+    var marker = new Tmapv2.Marker({
+      position: new Tmapv2.LatLng(37.5665, 126.9780),
+      map: map,
+      title: "여기 고라니 출몰!"
+    });
+  </script>
+</body>
+</html>
+
