@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>카카오 지도 예제</title>
+  <style>
+    #map {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+
+  <!-- ✅ JavaScript 키 정확히 입력 -->
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1de10a414ea38a84eb90322cb2d121c3"></script>
+</head>
+<body>
+  <h2>🦌 고라니 출몰 지역 표시</h2>
+  <div id="map"></div>
+
+  <script>
+    // API가 완전히 로드된 후 실행
+    kakao.maps.load(function() {
+      var mapContainer = document.getElementById("map");
+      var mapOption = {
+        center: new kakao.maps.LatLng(37.5665, 126.9780),
+        level: 3
+      };
+
+      var map = new kakao.maps.Map(mapContainer, mapOption);
+
+      var markerPosition = new kakao.maps.LatLng(37.5665, 126.9780);
+      var marker = new kakao.maps.Marker({
+        position: markerPosition
+      });
+
+      marker.setMap(map);
+    });
+  </script>
+</body>
+</html>
