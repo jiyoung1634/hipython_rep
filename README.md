@@ -55,6 +55,20 @@ Python을 활용해 **전자상거래 상품의 카테고리별 구매 트렌드
 
 ---
 
+## 📊 머신러닝 실습 프로젝트 02: 자전거(bike) 대여량 예측 모델 보고서
+Kaggle의 [Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing-demand/data) 데이터를 기반으로,  
+시간별 자전거 대여 수요를 예측하는 다양한 회귀 모델을 구현하고 성능을 비교한 보고서입니다.  
+EDA와 전처리를 수행한 후,  
+선형 회귀(Linear Regression), 랜덤 포레스트 회귀(RandomForest Regressor),  
+다항 회귀 모델, 규제 회귀(Ridge, Lasso, ElasticNet) 등 다양한 모델을 적용하여  
+RMSE와 R² Score를 기준으로 예측 성능을 분석하였습니다.  
+또한 모델별로 스케일링 여부, 교차 검증 등의 적용 유무에 따른 성능 변화를 함께 실험하였습니다.
+
+> 📁 `머신러닝 보고서2/` 폴더에서 확인하실 수 있습니다
+
+---
+
+
 ## 📌 학습 내용 요약
 
 - Python 기초 문법 및 실습 (자료형, 조건문, 반복문, 함수, 클래스 등)
