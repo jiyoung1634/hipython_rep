@@ -56,13 +56,14 @@
 
 
 | Model                      | RMSE              | R2 Score          | Evaluation Method           |
-| :------------------------- | :---------------- | :---------------- | :-------------------------- |
+|:---------------------------|:------------------|:------------------|:----------------------------|
 | Linear Regression          | 4.201674e+05      | 3.800000e-01      | Train/Test Split            |
 | Random Forest              | 3.162725e+05      | 6.500000e-01      | Train/Test Split            |
 | Linear Regression (Scaled) | 4.201674e+05      | 3.800000e-01      | Train/Test Split            |
 | Random Forest (Scaled)     | 3.171985e+05      | 6.500000e-01      | Train/Test Split            |
 | Linear Regression (CV)     | 2.728264e+15      | -1.346860e+20     | K-Fold Cross-Validation (Avg) |
-| Random Forest (CV)         | 1.800404e+05      | 8.200000e-01      | K-Fold Cross-Validation (Avg) |
+| Random Forest (CV)         | 1.800404e+05 🥇     | 8.200000e-01 🥇     | K-Fold Cross-Validation (Avg) |
+| XGBoost                    | 3.298193e+05      | 6.200000e-01      | Train/Test Split (Early Stopping) |
 
 ---
 
