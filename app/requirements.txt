@@ -1,6 +1,6 @@
-**`requirements.txt`**
+requirements.txt
 
-`streamlit
+streamlit
 pandas
 numpy
-matplotlib`
+matplotlib

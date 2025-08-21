@@ -17,7 +17,7 @@ st.title('**AutocarZ - 자율주행 중 로드킬 안전 강화 및 자동 신�
 
 ## 사이드바
 
-img_4 = Image.open('./image/오또카지로고.png')
+img_4 = Image.open('../image/오또카지로고.png')
 
 st.sidebar.image(img_4)
 st.sidebar.header('프로토타입')
@@ -25,9 +25,9 @@ st.sidebar.header('프로토타입')
 select_side = st.sidebar.selectbox('프로토타입', 
                                     ['카메라', '객체 인식', '전광판', 'Map & 통계'])
 
-img_1 = Image.open('./image/고라니.jpg')
-img_2 = Image.open('./image/yolo.png')
-img_3 = Image.open('./image/고라니인식.png')
+img_1 = Image.open('../image/고라니.jpg')
+img_2 = Image.open('../image/yolo.png')
+img_3 = Image.open('../image/고라니인식.png')
 
 
 ## 페이지별 화면 구성
