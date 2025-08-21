@@ -27,7 +27,7 @@ select_side = st.sidebar.selectbox('프로토타입',
 
 img_1 = Image.open('gorani.jpg')
 img_2 = Image.open('yolo.png')
-img_3 = Image.open('고라니인식.png')
+img_3 = Image.open('gorani_a.png')
 
 
 ## 페이지별 화면 구성
